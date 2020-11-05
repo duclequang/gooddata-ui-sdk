@@ -16,6 +16,7 @@ import "codemirror/theme/material.css";
 import fs from "fs";
 import { BarChartExample } from "../examples/basic/BarChartExample";
 import { renderIntoDocument } from "react-dom/test-utils";
+import { doc } from "prettier";
 // import {measureColumnWidthItemSimple} from "../../../../libs/sdk-ui-tests/stories/end-to-end/pivotTable/widthItems";
 // import {newAttributeLocator} from "../../../../libs/sdk-model/src";
 // import {IMenuProps} from "../../../../libs/sdk-ui-pivot/src/menu/Menu";
@@ -24,16 +25,13 @@ interface IExampleWithSourceProps {
     source: string;
     sourceJS?: string;
 }
-
 export interface ICodeMirrorProps {
     runCode: boolean;
     code: string;
 }
-
 export interface IReactNodeProps {
     reactNode: React.ReactNode;
 }
-
 class MyComponent extends Component<ICodeMirrorProps> {
     componentNames = {
         bubbleChartExamples: BubbleChartExample,
@@ -52,7 +50,6 @@ class MyComponent extends Component<ICodeMirrorProps> {
 //     barChart: BarChart,
 //     barChartExamples: BarChartExample
 // };
-
 // class Abc extends Component {
 //     public render(): React.ReactNode {
 //         return (
@@ -63,7 +60,6 @@ class MyComponent extends Component<ICodeMirrorProps> {
 //         );
 //     }
 // }
-
 export const DiffChart = (props: ICodeMirrorProps) => {
     // ReactHtmlParser(props.code);
     // var parser = new DOMParser();
@@ -96,7 +92,6 @@ export const DiffChart = (props: ICodeMirrorProps) => {
         // React.createElement(MyComponent, {runCode: true, code:})
     );
 };
-
 // const measureWidth = (props: ICodeMirrorProps) => {
 //     return (props.code);
 //
@@ -114,7 +109,6 @@ export const ExampleWithSource: React.FC<IExampleWithSourceProps> = ({
     });
     // const [css, setSource] = useState<React.FC>(BarChartExample)
     // var css = <h1>Supprise at hereeeeeeee</h1>
-
     const toggle = () => setState(!hidden);
     const runCode = () => {
         // @ts-ignore
@@ -129,7 +123,6 @@ export const ExampleWithSource: React.FC<IExampleWithSourceProps> = ({
         //     // />,
         //     document.getElementById("kl1"),
         // );
-
         // var splitted = props.code.split(/<[^>]*(.*?)\/>/);
         // ReactDOM.render(<MyComponent/>, document.getElementById("kl1"));
         // const dir = "webpack:///src/components/Menu.tsx";
@@ -159,17 +152,14 @@ export const ExampleWithSource: React.FC<IExampleWithSourceProps> = ({
                     align-items: stretch;
                     margin-top: 30px;
                 }
-
                 .example {
                     padding: 20px;
                     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
                     background-color: white;
                 }
-
                 .source {
                     margin: 20px 0;
                 }
-
                 :global(pre) {
                     overflow: auto;
                 }
@@ -217,9 +207,8 @@ export const ExampleWithSource: React.FC<IExampleWithSourceProps> = ({
                 {/*<iframe srcDoc={props.code}></iframe>*/}
             </div>
             <div className="Output" id="kl1">
-                "<h1>Supprise at here</h1>"{/*{css}*/}
+                <h1>Supprise at here</h1>"{/*{css}*/}
                 <MyComponent runCode={props.runCode} code={props.code} />
-                );
             </div>
         </div>
     );
