@@ -311,11 +311,19 @@
       "allowedCategories": [ "examples", "production", "tools" ]
     },
     {
+      "name": "@types/react-frame-component",
+      "allowedCategories": [ "examples" ]
+    },
+    {
       "name": "@types/react-google-recaptcha",
       "allowedCategories": [ "examples" ]
     },
     {
       "name": "@types/react-helmet",
+      "allowedCategories": [ "examples" ]
+    },
+    {
+      "name": "@types/react-html-parser",
       "allowedCategories": [ "examples" ]
     },
     {
@@ -384,7 +392,7 @@
     },
     {
       "name": "axios",
-      "allowedCategories": [ "production" ]
+      "allowedCategories": [ "examples", "production" ]
     },
     {
       "name": "babel-loader",
@@ -432,7 +440,7 @@
     },
     {
       "name": "codemirror",
-      "allowedCategories": [ "production" ]
+      "allowedCategories": [ "examples", "production" ]
     },
     {
       "name": "commander",
@@ -695,6 +703,14 @@
       "allowedCategories": [ "production", "tools" ]
     },
     {
+      "name": "pusher-js",
+      "allowedCategories": [ "examples" ]
+    },
+    {
+      "name": "pushid",
+      "allowedCategories": [ "examples" ]
+    },
+    {
       "name": "qs",
       "allowedCategories": [ "production" ]
     },
@@ -712,7 +728,7 @@
     },
     {
       "name": "react-codemirror2",
-      "allowedCategories": [ "production" ]
+      "allowedCategories": [ "examples", "production" ]
     },
     {
       "name": "react-datepicker",
@@ -727,6 +743,10 @@
       "allowedCategories": [ "examples", "production", "tools" ]
     },
     {
+      "name": "react-frame-component",
+      "allowedCategories": [ "examples" ]
+    },
+    {
       "name": "react-ga",
       "allowedCategories": [ "examples" ]
     },
@@ -739,8 +759,16 @@
       "allowedCategories": [ "examples" ]
     },
     {
+      "name": "react-html-parser",
+      "allowedCategories": [ "examples" ]
+    },
+    {
       "name": "react-intl",
       "allowedCategories": [ "production", "tools" ]
+    },
+    {
+      "name": "react-jsx-parser",
+      "allowedCategories": [ "examples" ]
     },
     {
       "name": "react-measure",
@@ -776,6 +804,10 @@
     },
     {
       "name": "recharts",
+      "allowedCategories": [ "examples" ]
+    },
+    {
+      "name": "replace-in-file-webpack-plugin",
       "allowedCategories": [ "examples" ]
     },
     {
