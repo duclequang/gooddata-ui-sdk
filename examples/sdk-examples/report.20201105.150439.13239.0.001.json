@@ -1,0 +1,538 @@
+{
+    "header": {
+        "reportVersion": 1,
+        "event": "Allocation failed - JavaScript heap out of memory",
+        "trigger": "FatalError",
+        "filename": "report.20201105.150439.13239.0.001.json",
+        "dumpEventTime": "2020-11-05T15:04:39Z",
+        "dumpEventTimeStamp": "1604563479374",
+        "processId": 13239,
+        "cwd": "/home/gdc-mtt/TuBui/ducle/gooddata-ui-sdk/examples/sdk-examples",
+        "commandLine": [
+            "/home/gdc-mtt/.nvm/versions/node/v12.15.0/bin/node",
+            "/home/gdc-mtt/TuBui/ducle/gooddata-ui-sdk/examples/sdk-examples/node_modules/.bin/../webpack-dev-server/bin/webpack-dev-server.js",
+            "--hot",
+            "--https",
+            "--host",
+            "10.0.69.56",
+            "--port",
+            "8997"
+        ],
+        "nodejsVersion": "v12.15.0",
+        "glibcVersionRuntime": "2.27",
+        "glibcVersionCompiler": "2.17",
+        "wordSize": 64,
+        "arch": "x64",
+        "platform": "linux",
+        "componentVersions": {
+            "node": "12.15.0",
+            "v8": "7.7.299.13-node.16",
+            "uv": "1.33.1",
+            "zlib": "1.2.11",
+            "brotli": "1.0.7",
+            "ares": "1.15.0",
+            "modules": "72",
+            "nghttp2": "1.40.0",
+            "napi": "5",
+            "llhttp": "2.0.4",
+            "http_parser": "2.9.3",
+            "openssl": "1.1.1d",
+            "cldr": "35.1",
+            "icu": "64.2",
+            "tz": "2019c",
+            "unicode": "12.1"
+        },
+        "release": {
+            "name": "node",
+            "lts": "Erbium",
+            "headersUrl": "https://nodejs.org/download/release/v12.15.0/node-v12.15.0-headers.tar.gz",
+            "sourceUrl": "https://nodejs.org/download/release/v12.15.0/node-v12.15.0.tar.gz"
+        },
+        "osName": "Linux",
+        "osRelease": "4.15.0-112-generic",
+        "osVersion": "#113-Ubuntu SMP Thu Jul 9 23:41:39 UTC 2020",
+        "osMachine": "x86_64",
+        "cpus": [
+            {
+                "model": "Intel(R) Core(TM) i5-4460  CPU @ 3.20GHz",
+                "speed": 2516,
+                "user": 157270800,
+                "nice": 4082600,
+                "sys": 23818200,
+                "idle": 61057105100,
+                "irq": 0
+            },
+            {
+                "model": "Intel(R) Core(TM) i5-4460  CPU @ 3.20GHz",
+                "speed": 2886,
+                "user": 148935400,
+                "nice": 5332600,
+                "sys": 21985600,
+                "idle": 61072132700,
+                "irq": 0
+            },
+            {
+                "model": "Intel(R) Core(TM) i5-4460  CPU @ 3.20GHz",
+                "speed": 2726,
+                "user": 160524100,
+                "nice": 6679200,
+                "sys": 22916000,
+                "idle": 60937479900,
+                "irq": 0
+            },
+            {
+                "model": "Intel(R) Core(TM) i5-4460  CPU @ 3.20GHz",
+                "speed": 3010,
+                "user": 179732200,
+                "nice": 4360900,
+                "sys": 48480400,
+                "idle": 60957229000,
+                "irq": 0
+            }
+        ],
+        "networkInterfaces": [
+            {
+                "name": "lo",
+                "internal": true,
+                "mac": "00:00:00:00:00:00",
+                "address": "127.0.0.1",
+                "netmask": "255.0.0.0",
+                "family": "IPv4"
+            },
+            {
+                "name": "enp3s0",
+                "internal": false,
+                "mac": "1c:b7:2c:b1:9b:7f",
+                "address": "10.0.69.56",
+                "netmask": "255.255.252.0",
+                "family": "IPv4"
+            },
+            {
+                "name": "lo",
+                "internal": true,
+                "mac": "00:00:00:00:00:00",
+                "address": "::1",
+                "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+                "family": "IPv6",
+                "scopeid": 0
+            },
+            {
+                "name": "enp3s0",
+                "internal": false,
+                "mac": "1c:b7:2c:b1:9b:7f",
+                "address": "fe80::134f:704e:3f2e:7301",
+                "netmask": "ffff:ffff:ffff:ffff::",
+                "family": "IPv6",
+                "scopeid": 2
+            }
+        ],
+        "host": "GDC-ATT-LTQMINH"
+    },
+    "javascriptStack": {
+        "message": "No stack.",
+        "stack": ["Unavailable."]
+    },
+    "nativeStack": [
+        {
+            "pc": "0x0000000000b05e75",
+            "symbol": "report::TriggerNodeReport(v8::Isolate*, node::Environment*, char const*, char const*, std::string const&, v8::Local<v8::String>) [/home/gdc-mtt/.nvm/versions/node/v12.15.0/bin/node]"
+        },
+        {
+            "pc": "0x00000000009dbda3",
+            "symbol": "node::OnFatalError(char const*, char const*) [/home/gdc-mtt/.nvm/versions/node/v12.15.0/bin/node]"
+        },
+        {
+            "pc": "0x0000000000b3b45e",
+            "symbol": "v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [/home/gdc-mtt/.nvm/versions/node/v12.15.0/bin/node]"
+        },
+        {
+            "pc": "0x0000000000b3b7d9",
+            "symbol": "v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [/home/gdc-mtt/.nvm/versions/node/v12.15.0/bin/node]"
+        },
+        {
+            "pc": "0x0000000000ce6b75",
+            "symbol": " [/home/gdc-mtt/.nvm/versions/node/v12.15.0/bin/node]"
+        },
+        {
+            "pc": "0x0000000000ce7206",
+            "symbol": "v8::internal::Heap::RecomputeLimits(v8::internal::GarbageCollector) [/home/gdc-mtt/.nvm/versions/node/v12.15.0/bin/node]"
+        },
+        {
+            "pc": "0x0000000000cf309a",
+            "symbol": "v8::internal::Heap::PerformGarbageCollection(v8::internal::GarbageCollector, v8::GCCallbackFlags) [/home/gdc-mtt/.nvm/versions/node/v12.15.0/bin/node]"
+        },
+        {
+            "pc": "0x0000000000cf3fa5",
+            "symbol": "v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [/home/gdc-mtt/.nvm/versions/node/v12.15.0/bin/node]"
+        },
+        {
+            "pc": "0x0000000000cf69b8",
+            "symbol": "v8::internal::Heap::AllocateRawWithRetryOrFail(int, v8::internal::AllocationType, v8::internal::AllocationAlignment) [/home/gdc-mtt/.nvm/versions/node/v12.15.0/bin/node]"
+        },
+        {
+            "pc": "0x0000000000cbd2e7",
+            "symbol": "v8::internal::Factory::NewFillerObject(int, bool, v8::internal::AllocationType) [/home/gdc-mtt/.nvm/versions/node/v12.15.0/bin/node]"
+        },
+        {
+            "pc": "0x0000000000ff334b",
+            "symbol": "v8::internal::Runtime_AllocateInYoungGeneration(int, unsigned long*, v8::internal::Isolate*) [/home/gdc-mtt/.nvm/versions/node/v12.15.0/bin/node]"
+        },
+        {
+            "pc": "0x0000000001376519",
+            "symbol": " [/home/gdc-mtt/.nvm/versions/node/v12.15.0/bin/node]"
+        }
+    ],
+    "javascriptHeap": {
+        "totalMemory": 2168090624,
+        "totalCommittedMemory": 2160254728,
+        "usedMemory": 2030958416,
+        "availableMemory": 112199712,
+        "memoryLimit": 2197815296,
+        "heapSpaces": {
+            "read_only_space": {
+                "memorySize": 262144,
+                "committedMemory": 32568,
+                "capacity": 261872,
+                "used": 32296,
+                "available": 229576
+            },
+            "new_space": {
+                "memorySize": 33554432,
+                "committedMemory": 27006096,
+                "capacity": 16759808,
+                "used": 4197784,
+                "available": 12562024
+            },
+            "old_space": {
+                "memorySize": 2025172992,
+                "committedMemory": 2024289824,
+                "capacity": 1974889064,
+                "used": 1921965432,
+                "available": 52923632
+            },
+            "code_space": {
+                "memorySize": 2260992,
+                "committedMemory": 2140512,
+                "capacity": 1913856,
+                "used": 1913856,
+                "available": 0
+            },
+            "map_space": {
+                "memorySize": 6819840,
+                "committedMemory": 6765504,
+                "capacity": 3036640,
+                "used": 3036640,
+                "available": 0
+            },
+            "large_object_space": {
+                "memorySize": 99397632,
+                "committedMemory": 99397632,
+                "capacity": 99261752,
+                "used": 99261752,
+                "available": 0
+            },
+            "code_large_object_space": {
+                "memorySize": 622592,
+                "committedMemory": 622592,
+                "capacity": 550656,
+                "used": 550656,
+                "available": 0
+            },
+            "new_large_object_space": {
+                "memorySize": 0,
+                "committedMemory": 0,
+                "capacity": 16759808,
+                "used": 0,
+                "available": 16759808
+            }
+        }
+    },
+    "resourceUsage": {
+        "userCpuSeconds": 149.353,
+        "kernelCpuSeconds": 9.89178,
+        "cpuConsumptionPercent": 164.17,
+        "maxRss": 2676092928,
+        "pageFaults": {
+            "IORequired": 2,
+            "IONotRequired": 892989
+        },
+        "fsActivity": {
+            "reads": 74040,
+            "writes": 0
+        }
+    },
+    "uvthreadResourceUsage": {
+        "userCpuSeconds": 73.1795,
+        "kernelCpuSeconds": 3.04998,
+        "cpuConsumptionPercent": 78.5871,
+        "fsActivity": {
+            "reads": 35176,
+            "writes": 0
+        }
+    },
+    "libuv": [],
+    "environmentVariables": {
+        "npm_package_dependencies__gooddata_sdk_model": "^8.1.0-alpha.35",
+        "npm_package_devDependencies__babel_polyfill": "^7.7.2",
+        "npm_package_devDependencies__types_node": "^12.12.26",
+        "npm_package_scripts_refresh_ldm": "./scripts/refresh-ldm.sh && npm run build",
+        "LESSOPEN": "| /usr/bin/lesspipe %s",
+        "npm_package_devDependencies__types_react_router_dom": "^5.1.5",
+        "MAIL": "/var/mail/gdc-mtt",
+        "npm_config_user_agent": "yarn/1.17.3 npm/? node/v12.15.0 linux x64",
+        "USER": "gdc-mtt",
+        "npm_package_devDependencies_jest": "^26.4.2",
+        "SSH_CLIENT": "10.0.69.53 51164 22",
+        "npm_package_devDependencies__babel_plugin_transform_typescript": "^7.7.2",
+        "npm_package_devDependencies_webpack_cli": "^3.3.7",
+        "npm_config_version_commit_hooks": "true",
+        "LC_TIME": "vi_VN",
+        "npm_config_bin_links": "true",
+        "npm_package_dependencies__gooddata_sdk_ui_filters": "^8.1.0-alpha.35",
+        "npm_package_dependencies_formik": "^0.11.11",
+        "npm_package_dependencies_isomorphic_fetch": "^2.2.1",
+        "npm_config_init_version": "1.0.0",
+        "npm_package_devDependencies__types_react_datepicker": "^2.11.0",
+        "npm_package_dependencies__gooddata_sdk_ui_charts": "^8.1.0-alpha.35",
+        "npm_package_devDependencies_eslint_plugin_header": "^3.0.0",
+        "npm_package_dependencies_codemirror": "^5.54.0",
+        "npm_node_execpath": "/home/gdc-mtt/.nvm/versions/node/v12.15.0/bin/node",
+        "npm_package_devDependencies_compression_webpack_plugin": "^5.0.1",
+        "npm_package_devDependencies_file_loader": "^6.0.0",
+        "npm_package_scripts_examples_testcafe_ci": "./scripts/run-testcafe.sh ci",
+        "npm_package_dependencies__gooddata_sdk_ui": "^8.1.0-alpha.35",
+        "SHLVL": "2",
+        "npm_package_files_0": "dist",
+        "npm_package_scripts_heroku_create_app": "heroku create ${PUBLIC_APP_NAME}; exit 0",
+        "OLDPWD": "/home/gdc-mtt/TuBui/ducle/gooddata-ui-sdk",
+        "npm_package_devDependencies__types_yup": "^0.28.3",
+        "HOME": "/home/gdc-mtt",
+        "npm_package_devDependencies__typescript_eslint_parser": "^3.7.1",
+        "npm_package_files_1": "src",
+        "npm_package_devDependencies__babel_plugin_proposal_class_properties": "^7.7.2",
+        "npm_package_dependencies_react_syntax_highlighter": "^12.2.1",
+        "SSH_TTY": "/dev/pts/2",
+        "NVM_BIN": "/home/gdc-mtt/.nvm/versions/node/v12.15.0/bin",
+        "npm_package_scripts_build_all": "npm run build",
+        "npm_package_files_2": "styles",
+        "npm_package_devDependencies_commander": "^3.0.2",
+        "npm_config_init_license": "MIT",
+        "npm_package_dependencies_babel_polyfill": "^6.26.0",
+        "npm_package_dependencies_pushid": "^1.0.0",
+        "npm_package_dependencies__gooddata_sdk_ui_ext": "^8.1.0-alpha.35",
+        "npm_package_files_3": "LICENSE",
+        "npm_package_devDependencies__types_recharts": "^1.8.15",
+        "npm_package_config_eslint": "-c .eslintrc.js --ext ts,tsx src/",
+        "YARN_WRAP_OUTPUT": "false",
+        "npm_config_version_tag_prefix": "v",
+        "npm_package_scripts_prettier_check": "prettier --check '{src,stories,styles,__mocks__,examples/server/src,examples/src,examples/test}/**/*.{ts,js,tsx,jsx,json,scss,md,yaml,html}'",
+        "LC_MONETARY": "vi_VN",
+        "npm_package_dependencies_react_google_recaptcha": "^2.0.1",
+        "npm_package_devDependencies_eslint_plugin_react_hooks": "^4.0.8",
+        "npm_package_dependencies_moment": "^2.24.0",
+        "npm_package_scripts_heroku_release": "heroku container:release web -a ${PUBLIC_APP_NAME}",
+        "DBUS_SESSION_BUS_ADDRESS": "unix:path=/run/user/1001/bus",
+        "npm_package_dependencies_react_router_dom": "^4.2.2",
+        "npm_package_scripts_examples": "npm run refresh-examplesjs && bash scripts/run-examples.sh",
+        "npm_package_scripts_heroku_set_env_BACKEND_HOST": "echo ${BACKEND_HOST} && heroku config:set BACKEND_HOST=${BACKEND_HOST} -a ${PUBLIC_APP_NAME}",
+        "npm_package_description": "GoodData.UI SDK - Examples",
+        "npm_package_devDependencies_typescript": "4.0.2",
+        "npm_package_devDependencies_babel_loader": "^8.0.5",
+        "NVM_DIR": "/home/gdc-mtt/.nvm",
+        "npm_package_dependencies_react_jsx_parser": "^1.26.3",
+        "npm_package_devDependencies__types_react_dom": "^16.9.3",
+        "npm_package_dependencies_react_codemirror2": "^7.2.0",
+        "npm_package_devDependencies__babel_preset_env": "^7.7.2",
+        "npm_package_devDependencies__types_history": "^4.7.5",
+        "npm_package_readmeFilename": "README.md",
+        "npm_package_dependencies_tslib": "^2.0.0",
+        "npm_package_devDependencies_prettier": "~2.0.5",
+        "npm_package_dependencies_react_frame_component": "^4.1.3",
+        "npm_package_devDependencies__babel_runtime": "^7.7.2",
+        "npm_package_dependencies_react_datepicker": "^2.15.0",
+        "npm_package_devDependencies_eslint_plugin_import": "^2.22.0",
+        "npm_package_scripts_heroku_set_env_BACKEND_URL": "echo ${BACKEND_URL} && heroku config:set BACKEND_URL=${BACKEND_URL} -a ${PUBLIC_APP_NAME}",
+        "npm_package_devDependencies__babel_preset_typescript": "^7.7.2",
+        "npm_package_scripts_prettier_write": "prettier --write '{src,stories,styles,__mocks__,examples/server/src,examples/src,examples/test}/**/*.{ts,js,tsx,jsx,json,scss,md,yaml,html}'",
+        "LOGNAME": "gdc-mtt",
+        "npm_package_devDependencies_circular_dependency_plugin": "^5.2.0",
+        "npm_package_devDependencies_node_sass": "^4.13.0",
+        "npm_package_private": "true",
+        "npm_package_devDependencies__babel_preset_react": "^7.7.2",
+        "_": "/home/gdc-mtt/TuBui/ducle/gooddata-ui-sdk/examples/sdk-examples/node_modules/.bin/webpack-dev-server",
+        "npm_config_registry": "https://registry.yarnpkg.com",
+        "npm_package_devDependencies__typescript_eslint_eslint_plugin": "^3.7.1",
+        "npm_package_dependencies_yup": "^0.24.1",
+        "npm_package_scripts_validate_ci": "npm run eslint-ci && npm run prettier-check",
+        "npm_package_devDependencies__babel_core": "^7.7.2",
+        "npm_package_scripts_examples_testcafe": "./scripts/run-testcafe.sh visual",
+        "npm_package_devDependencies__types_lodash": "^4.14.158",
+        "XDG_SESSION_ID": "1977",
+        "TERM": "xterm-256color",
+        "npm_package_devDependencies__types_react_measure": "2.0.5",
+        "npm_package_devDependencies_clean_webpack_plugin": "^3.0.0",
+        "npm_config_ignore_scripts": "",
+        "npm_package_devDependencies_html_webpack_plugin": "^4.3.0",
+        "npm_package_devDependencies__gooddata_eslint_config": "^2.0.0",
+        "npm_package_devDependencies__types_classnames": "2.2.3",
+        "npm_package_devDependencies__types_react_helmet": "^5.0.15",
+        "npm_package_dependencies_axios": "^0.19.0",
+        "npm_package_devDependencies__types_react_html_parser": "^2.0.1",
+        "npm_package_devDependencies_eslint_plugin_jest": "^23.20.0",
+        "npm_package_dependencies_recharts": "^1.8.5",
+        "PATH": "/tmp/yarn--1604563377823-0.647488316487075:/home/gdc-mtt/TuBui/ducle/gooddata-ui-sdk/examples/sdk-examples/node_modules/.bin:/home/gdc-mtt/.config/yarn/link/node_modules/.bin:/home/gdc-mtt/.yarn/bin:/home/gdc-mtt/.nvm/versions/node/v12.15.0/libexec/lib/node_modules/npm/bin/node-gyp-bin:/home/gdc-mtt/.nvm/versions/node/v12.15.0/lib/node_modules/npm/bin/node-gyp-bin:/home/gdc-mtt/.nvm/versions/node/v12.15.0/bin/node_modules/npm/bin/node-gyp-bin:/home/gdc-mtt/.nvm/versions/node/v12.15.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin",
+        "npm_package_devDependencies__types_react_select": "^3.0.12",
+        "npm_package_devDependencies_testcafe": "^1.8.4",
+        "npm_package_repository_type": "git",
+        "npm_package_dependencies_react_ga": "^2.5.2",
+        "NODE": "/home/gdc-mtt/.nvm/versions/node/v12.15.0/bin/node",
+        "npm_package_name": "@gooddata/sdk-examples",
+        "LC_ADDRESS": "vi_VN",
+        "npm_package_dependencies__gooddata_api_client_bear": "^8.1.0-alpha.35",
+        "npm_package_dependencies_pusher_js": "^4.3.1",
+        "npm_package_devDependencies__gooddata_catalog_export": "^8.1.0-alpha.35",
+        "XDG_RUNTIME_DIR": "/run/user/1001",
+        "npm_package_dependencies_babel_runtime": "^6.26.0",
+        "npm_package_devDependencies__babel_cli": "^7.7.2",
+        "npm_package_devDependencies_heroku": "^7.43.2",
+        "LANG": "en_US.UTF-8",
+        "npm_package_devDependencies_eslint": "^7.5.0",
+        "npm_package_devDependencies_webpack": "^4.44.1",
+        "npm_package_devDependencies_stats_webpack_plugin": "^0.7.0",
+        "npm_package_dependencies_react_dom": "^16.10.0",
+        "LC_TELEPHONE": "vi_VN",
+        "npm_package_dependencies_history": "^4.7.2",
+        "LS_COLORS": "rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:",
+        "npm_package_devDependencies_babel_plugin_lodash": "^3.3.4",
+        "npm_package_dependencies__gooddata_sdk_ui_geo": "^8.1.0-alpha.35",
+        "npm_package_dependencies__gooddata_sdk_backend_bear": "^8.1.0-alpha.35",
+        "npm_package_devDependencies_supertest": "^4.0.2",
+        "npm_lifecycle_script": "npm run refresh-examplesjs && bash scripts/run-examples.sh",
+        "npm_package_scripts_eslint_ci": "mkdir -p ./ci/results && eslint -f checkstyle -o ci/results/eslint-results.xml $npm_package_config_eslint",
+        "npm_package_dependencies__gooddata_sdk_backend_spi": "^8.1.0-alpha.35",
+        "npm_package_devDependencies_webpack_dev_server": "^3.8.0",
+        "npm_config_version_git_message": "v%s",
+        "npm_package_scripts_test": "jest --watch",
+        "npm_package_scripts_refresh_examplesjs": "bash ./scripts/refresh-examplesJS.sh",
+        "npm_package_devDependencies__babel_plugin_proposal_object_rest_spread": "^7.7.2",
+        "npm_package_devDependencies__types_react": "^16.9.11",
+        "npm_package_repository_url": "https://github.com/gooddata/gooddata-ui-sdk/tree/master/examples/sdk-examples",
+        "LC_NAME": "vi_VN",
+        "npm_lifecycle_event": "examples",
+        "SHELL": "/bin/bash",
+        "npm_package_devDependencies_jest_junit": "^3.0.0",
+        "npm_package_version": "1.0.0-alpha.0",
+        "NODE_PATH": "/home/gdc-mtt/TuBui/ducle/gooddata-ui-sdk/common/temp/node_modules/.pnpm/webpack-dev-server@3.11.0_93ca2875a658e9d1552850624e6b91c7/node_modules/webpack-dev-server/bin/webpack-dev-server.js/node_modules:/home/gdc-mtt/TuBui/ducle/gooddata-ui-sdk/common/temp/node_modules/.pnpm/webpack-dev-server@3.11.0_93ca2875a658e9d1552850624e6b91c7/node_modules/webpack-dev-server/bin/node_modules:/home/gdc-mtt/TuBui/ducle/gooddata-ui-sdk/common/temp/node_modules/.pnpm/webpack-dev-server@3.11.0_93ca2875a658e9d1552850624e6b91c7/node_modules/webpack-dev-server/node_modules:/home/gdc-mtt/TuBui/ducle/gooddata-ui-sdk/common/temp/node_modules/.pnpm/webpack-dev-server@3.11.0_93ca2875a658e9d1552850624e6b91c7/node_modules:/home/gdc-mtt/TuBui/ducle/gooddata-ui-sdk/common/temp/node_modules/.pnpm/node_modules:/home/gdc-mtt/TuBui/ducle/gooddata-ui-sdk/common/temp/node_modules:/home/gdc-mtt/TuBui/ducle/gooddata-ui-sdk/common/node_modules:/home/gdc-mtt/TuBui/ducle/gooddata-ui-sdk/node_modules:/home/gdc-mtt/TuBui/ducle/node_modules:/home/gdc-mtt/TuBui/node_modules:/home/gdc-mtt/node_modules:/home/node_modules:/node_modules:/home/gdc-mtt/TuBui/ducle/gooddata-ui-sdk/examples/sdk-examples/node_modules/webpack-dev-server/bin/webpack-dev-server.js/node_modules:/home/gdc-mtt/TuBui/ducle/gooddata-ui-sdk/examples/sdk-examples/node_modules/webpack-dev-server/bin/node_modules:/home/gdc-mtt/TuBui/ducle/gooddata-ui-sdk/examples/sdk-examples/node_modules/webpack-dev-server/node_modules:/home/gdc-mtt/TuBui/ducle/gooddata-ui-sdk/examples/sdk-examples/node_modules:/home/gdc-mtt/TuBui/ducle/gooddata-ui-sdk/examples/node_modules",
+        "npm_package_dependencies__types_react_frame_component": "^4.1.1",
+        "npm_config_argv": "{\"remain\":[],\"cooked\":[\"run\",\"examples\"],\"original\":[\"examples\"]}",
+        "npm_package_scripts_build": "npm run refresh-examplesjs && bash scripts/build-examples.sh ${EXAMPLES_BUILD_TYPE}",
+        "npm_package_dependencies_lodash": "^4.17.19",
+        "npm_package_dependencies_react_measure": "^2.3.0",
+        "LESSCLOSE": "/usr/bin/lesspipe %s %s",
+        "npm_package_scripts_examples_": "# Default is developer domain, other options: npm run examples [sec,secure,stg,stg2,stg3,demo,developer or URL]",
+        "npm_package_dependencies_replace_in_file_webpack_plugin": "^1.0.6",
+        "npm_package_dependencies__gooddata_api_model_bear": "^8.1.0-alpha.35",
+        "npm_package_dependencies_ts_invariant": "^0.4.4",
+        "npm_package_scripts_examples_server": "node server/src/index.js",
+        "npm_package_scripts_validate": "npm run eslint && npm run prettier-check",
+        "LC_MEASUREMENT": "vi_VN",
+        "npm_package_scripts_heroku_set_env": "run-s heroku-set-env:*",
+        "npm_package_devDependencies_sass_loader": "^8.0.0",
+        "npm_config_version_git_sign": "",
+        "npm_config_version_git_tag": "true",
+        "npm_config_strict_ssl": "true",
+        "npm_package_license": "LicenseRef-LICENSE",
+        "npm_package_devDependencies_eslint_plugin_react": "^7.20.5",
+        "npm_package_devDependencies_fork_ts_checker_webpack_plugin": "^4.1.3",
+        "npm_package_dependencies_react_html_parser": "^2.0.2",
+        "npm_package_dependencies_react_helmet": "^6.0.0",
+        "npm_package_dependencies_classnames": "^2.2.6",
+        "LC_IDENTIFICATION": "vi_VN",
+        "npm_package_devDependencies_style_loader": "^1.2.1",
+        "npm_package_devDependencies__types_isomorphic_fetch": "^0.0.34",
+        "npm_package_dependencies_react_select": "^3.1.0",
+        "npm_package_devDependencies_eslint_plugin_prettier": "^3.1.4",
+        "npm_execpath": "/usr/share/yarn/bin/yarn.js",
+        "PWD": "/home/gdc-mtt/TuBui/ducle/gooddata-ui-sdk/examples/sdk-examples",
+        "npm_package_dependencies__gooddata_goodstrap": "^70.0.0",
+        "SSH_CONNECTION": "10.0.69.53 51164 10.0.69.56 22",
+        "NVM_CD_FLAGS": "",
+        "npm_package_devDependencies_source_map_loader": "^1.1.1",
+        "XDG_DATA_DIRS": "/usr/local/share:/usr/share:/var/lib/snapd/desktop",
+        "npm_package_author_name": "GoodData Corporation",
+        "npm_package_devDependencies_css_loader": "^3.5.3",
+        "npm_package_scripts_prepare_": "# Called before `npm publish` and on local `npm install`. Temporarily also for deleting obsolete node_modules. Ends with `true` to continue gracefully.",
+        "npm_package_devDependencies_dotenv_webpack": "^1.7.0",
+        "npm_package_scripts_test_once": "jest --passWithNoTests",
+        "LC_NUMERIC": "vi_VN",
+        "npm_package_devDependencies__types_react_syntax_highlighter": "^11.0.4",
+        "npm_package_devDependencies_raw_loader": "^4.0.1",
+        "npm_config_save_prefix": "^",
+        "npm_config_ignore_optional": "",
+        "LC_PAPER": "vi_VN",
+        "npm_package_devDependencies__babel_plugin_transform_async_to_generator": "^7.7.2",
+        "npm_package_devDependencies_styled_jsx": "^3.2.5",
+        "npm_package_devDependencies_npm_run_all": "^4.1.5",
+        "npm_package_dependencies__gooddata_sdk_ui_pivot": "^8.1.0-alpha.35",
+        "npm_package_devDependencies__types_react_google_recaptcha": "^1.1.1",
+        "INIT_CWD": "/home/gdc-mtt/TuBui/ducle/gooddata-ui-sdk/examples/sdk-examples",
+        "npm_package_scripts_examples_testcafe_live": "./scripts/run-testcafe.sh live",
+        "npm_package_dependencies_react": "^16.10.0",
+        "npm_package_scripts_eslint": "eslint $npm_package_config_eslint",
+        "WEBPACK_DEV_SERVER": "true",
+        "NODE_TLS_REJECT_UNAUTHORIZED": "0"
+    },
+    "userLimits": {
+        "core_file_size_blocks": {
+            "soft": 0,
+            "hard": "unlimited"
+        },
+        "data_seg_size_kbytes": {
+            "soft": "unlimited",
+            "hard": "unlimited"
+        },
+        "file_size_blocks": {
+            "soft": "unlimited",
+            "hard": "unlimited"
+        },
+        "max_locked_memory_bytes": {
+            "soft": 16777216,
+            "hard": 16777216
+        },
+        "max_memory_size_kbytes": {
+            "soft": "unlimited",
+            "hard": "unlimited"
+        },
+        "open_files": {
+            "soft": 1048576,
+            "hard": 1048576
+        },
+        "stack_size_bytes": {
+            "soft": 8388608,
+            "hard": "unlimited"
+        },
+        "cpu_time_seconds": {
+            "soft": "unlimited",
+            "hard": "unlimited"
+        },
+        "max_user_processes": {
+            "soft": 30335,
+            "hard": 30335
+        },
+        "virtual_memory_kbytes": {
+            "soft": "unlimited",
+            "hard": "unlimited"
+        }
+    },
+    "sharedObjects": [
+        "linux-vdso.so.1",
+        "/lib/x86_64-linux-gnu/libdl.so.2",
+        "/usr/lib/x86_64-linux-gnu/libstdc++.so.6",
+        "/lib/x86_64-linux-gnu/libm.so.6",
+        "/lib/x86_64-linux-gnu/libgcc_s.so.1",
+        "/lib/x86_64-linux-gnu/libpthread.so.0",
+        "/lib/x86_64-linux-gnu/libc.so.6",
+        "/lib64/ld-linux-x86-64.so.2",
+        "/home/gdc-mtt/TuBui/ducle/gooddata-ui-sdk/common/temp/node_modules/.pnpm/node-sass@4.14.1/node_modules/node-sass/vendor/linux-x64-72/binding.node"
+    ]
+}
